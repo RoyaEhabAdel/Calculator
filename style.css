@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: Poppins;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    background-color: #3B3E4C;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 50px 150px 150px #2b2e36;
+}
+.calculator .screen{
+    height: 200px;
+    padding-top: 50px;
+    color: #bbb;
+    font-size: 50px;
+    text-align: right;
+    border: 1px solid #5D697A;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+.calculator .screen .new{
+    color: #fff;
+    font-size: 80px;
+}
+.calculator .buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+}
+.calculator .buttons button{
+    border-radius: 20px;
+    border: none;
+    font-size: x-large;
+    color:#efefef;
+    background-color: #323847;
+    box-shadow: inset 5px 5px 5px #323847;
+}
+.calculator .buttons button:hover{
+    box-shadow: 0 0 1rem #5D697A;
+}
+.calculator .buttons button:nth-child(16),
+.calculator .buttons button:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.calculator .buttons button:nth-child(-n+3){
+    background-color: #5D697A;
+    box-shadow: inset 5px 5px 5px #5D697A,
+    inset -5px -5px 5px #5D697A;
+}
+.calculator .buttons button:nth-child(7),
+.calculator .buttons button:nth-child(11),
+.calculator .buttons button:nth-child(15){
+    background-color: #E09121;
+    box-shadow: inset 5px 5px 5x #E09121,
+    inset -5px -5px 5px #E09121,
+    5px 5px 5px #1d1f25;
+}
+.calculator .buttons button:active{
+    box-shadow: none;
+}
